@@ -1,0 +1,328 @@
+{
+  "Questions": {
+    "PMC-220": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc220.jpg",
+      "name": "PMC-220",
+      "tags": [
+        "DinRail",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification"
+      ]
+    },
+    "PMC-230": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc230.jpg",
+      "name": "PMC-230",
+      "tags": [
+        "DinRail",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification"
+      ]
+    },
+    "PMC-340": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc340.jpg",
+      "name": "PMC-340",
+      "tags": [
+        "DinRail",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification"
+      ]
+    },
+    "PMC-512": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc512.jpg",
+      "name": "PMC-512",
+      "tags": [
+        "DinRail",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification",
+        "MultiCircuit"
+      ]
+    },
+    "PMC-53A": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc53.jpg",
+      "name": "PMC-53A",
+      "tags": [
+        "Panel",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification"
+      ]
+    },
+    "PMC-726M": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc726M.jpg",
+      "name": "PMC-726M",
+      "tags": [
+        "Panel",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification"
+      ]
+    },
+    "QE1": {
+      "question": "What is the mounting type?",
+      "answers": {
+        "Din-Rail": {
+          "tags": [
+            "DinRail"
+          ],
+          "nextQuestion": "QE2"
+        },
+        "Panel Mount": {
+          "tags": [
+            "Panel"
+          ],
+          "nextQuestion": "QE2"
+        }
+      },
+      "isProduct": false
+    },
+    "QE10": {
+      "question": "Does the meter need certification for regulatory compliance?",
+      "isProduct": false,
+      "answers": {
+        "No": {
+          "tags": [
+            "NoCertification"
+          ],
+          "nextQuestion": "LastQuestion"
+        },
+        "Yes": {
+          "tags": [
+            "Certification"
+          ],
+          "nextQuestion": "LastQuestion"
+        }
+      }
+    },
+    "QE2": {
+      "question": "What phase does the system use?",
+      "answers": {
+        "Single Phase": {
+          "tags": [
+            "SinglePhase"
+          ],
+          "nextQuestion": "QE3"
+        },
+        "Three Phase": {
+          "tags": [
+            "ThreePhase"
+          ],
+          "nextQuestion": "QE3"
+        },
+        "Multi Circuit": {
+          "tags": [
+            "MultiCircuit"
+          ],
+          "nextQuestion": "QE3"
+        }
+      },
+      "isProduct": false
+    },
+    "QE3": {
+      "question": "Is a National Meter Identifier (NMI) required?",
+      "answers": {
+        "Yes": {
+          "tags": [
+            "NMI"
+          ],
+          "nextQuestion": "QE4"
+        },
+        "No": {
+          "tags": [
+            "NoNMI"
+          ],
+          "nextQuestion": "QE4"
+        }
+      },
+      "isProduct": false
+    },
+    "QE4": {
+      "question": "What communication protocol is needed?",
+      "answers": {
+        "RS485": {
+          "tags": [
+            "RS485"
+          ],
+          "nextQuestion": "QE5"
+        },
+        "Modbus": {
+          "tags": [
+            "Modbus"
+          ],
+          "nextQuestion": "QE5"
+        },
+        "Ethernet": {
+          "tags": [
+            "Ethernet"
+          ],
+          "nextQuestion": "QE5"
+        }
+      },
+      "isProduct": false
+    },
+    "QE5": {
+      "question": "Is memory or data logging required?",
+      "answers": {
+        "Yes": {
+          "tags": [
+            "Memory"
+          ],
+          "nextQuestion": "QE6"
+        },
+        "No": {
+          "tags": [
+            "NoMemory"
+          ],
+          "nextQuestion": "QE6"
+        }
+      },
+      "isProduct": false
+    },
+    "QE6": {
+      "question": "What is the voltage range of the system?",
+      "answers": {
+        "Low Voltage": {
+          "tags": [
+            "LowVoltage"
+          ],
+          "nextQuestion": "QE7"
+        },
+        "Medium to High Voltage": {
+          "tags": [
+            "MediumHighVoltage"
+          ],
+          "nextQuestion": "QE7"
+        },
+        "DC Metering": {
+          "tags": [
+            "DCMetering"
+          ],
+          "nextQuestion": "QE7"
+        }
+      },
+      "isProduct": false
+    },
+    "QE7": {
+      "question": "What is the current measurement method?",
+      "answers": {
+        "Less than 100A": {
+          "tags": [
+            "LessThan100A"
+          ],
+          "nextQuestion": "QE8"
+        },
+        "More than 100A": {
+          "tags": [
+            "MoreThan100A"
+          ],
+          "nextQuestion": "QE8"
+        }
+      },
+      "isProduct": false
+    },
+    "QE8": {
+      "question": "Is advanced functionality required?",
+      "answers": {
+        "Harmonics": {
+          "tags": [
+            "Harmonics"
+          ],
+          "nextQuestion": "QE9"
+        },
+        "Power Quality": {
+          "tags": [
+            "PowerQuality"
+          ],
+          "nextQuestion": "QE9"
+        }
+      },
+      "isProduct": false
+    },
+    "QE9": {
+      "question": "What is the accuracy class required?",
+      "answers": {
+        "Class 0.5": {
+          "tags": [
+            "Class0.5"
+          ],
+          "nextQuestion": "QE10"
+        },
+        "Class 1": {
+          "tags": [
+            "Class1"
+          ],
+          "nextQuestion": "QE10"
+        },
+        "Class 2": {
+          "tags": [
+            "Class2"
+          ],
+          "nextQuestion": "QE10"
+        }
+      },
+      "isProduct": false
+    },
+    "iMeter6": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/imeter6_2.jpg",
+      "name": "iMeter6",
+      "tags": [
+        "Panel",
+        "SinglePhase",
+        "NMI",
+        "RS485",
+        "NoMemory",
+        "DCMetering",
+        "MoreThan100A",
+        "Harmonics",
+        "Class1",
+        "NoCertification"
+      ]
+    }
+  }
+}
