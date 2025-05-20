@@ -1,0 +1,7 @@
+Panel,DinRail,Surface Mount
+SinglePhase,ThreePhase,MultiCircuit
+NMI,NoNMI
+Wireless,Ethernet,Mbus,BACnetMSTP,ModbusRTU,LoraWan, Lora,zigbee, thread
+Memory,NoMemory
+PQM,Harmonics
+Class1,Class2,Class0.5
