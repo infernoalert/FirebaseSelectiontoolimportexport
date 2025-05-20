@@ -6,15 +6,10 @@
       "name": "PMC-220",
       "tags": [
         "DinRail",
-        "SinglePhase",
-        "NMI",
-        "RS485",
+        "SinglePhase",        
+        "ModbusRTU",
         "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
-        "Harmonics",
-        "Class1",
-        "NoCertification"
+        "Class0.5"        
       ]
     },
     "PMC-230": {
@@ -25,13 +20,11 @@
         "DinRail",
         "SinglePhase",
         "NMI",
-        "RS485",
+        "ModbusRTU",
         "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
-        "Harmonics",
-        "Class1",
-        "NoCertification"
+        "Class0.5",
+        "NoNMI",
+        "Memory"
       ]
     },
     "PMC-340": {
@@ -40,15 +33,38 @@
       "name": "PMC-340",
       "tags": [
         "DinRail",
-        "SinglePhase",
+        "ThreePhase",
         "NMI",
-        "RS485",
+        "ModbusRTU",
         "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
-        "Harmonics",
-        "Class1",
-        "NoCertification"
+        "Class0.5",
+        "NoNMI"
+      ]
+    },
+    "PMC-350": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc220.jpg",
+      "name": "PMC-350",
+      "tags": [
+        "DinRail",
+        "ThreePhase",
+        "NoNMI",
+        "LoraWan",
+        "NoMemory",
+        "Class1"
+      ]
+    },
+    "PMC-352": {
+      "isProduct": true,
+      "imageUrl": "https://payamamerian.com/wp-content/uploads/2025/01/pmc230.jpg",
+      "name": "PMC-352",
+      "tags": [
+        "DinRail",
+        "ThreePhase",
+        "NoNMI",
+        "Lora",
+        "NoMemory",
+        "Class1"
       ]
     },
     "PMC-512": {
@@ -57,15 +73,11 @@
       "name": "PMC-512",
       "tags": [
         "DinRail",
-        "SinglePhase",
-        "NMI",
-        "RS485",
+        "MultiCircuit",
+        "NoNMI",
+        "ModbusRTU",
         "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
-        "Harmonics",
-        "Class1",
-        "NoCertification",
+        "Class2",
         "MultiCircuit"
       ]
     },
@@ -75,15 +87,13 @@
       "name": "PMC-53A",
       "tags": [
         "Panel",
-        "SinglePhase",
-        "NMI",
-        "RS485",
-        "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
+        "ThreePhase",
+        "NoNMI",
+        "ModbusRTU",
+        "Memory",
         "Harmonics",
-        "Class1",
-        "NoCertification"
+        "Class0.5",
+        "Ethernet"
       ]
     },
     "PMC-726M": {
@@ -92,220 +102,27 @@
       "name": "PMC-726M",
       "tags": [
         "Panel",
-        "SinglePhase",
-        "NMI",
-        "RS485",
+        "ThreePhase",
+        "NoNMI",
+        "ModbusRTU",
         "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
-        "Harmonics",
-        "Class1",
-        "NoCertification"
+        "Class1"
       ]
     },
-    "QE1": {
-      "question": "What is the mounting type?",
-      "answers": {
-        "Din-Rail": {
-          "tags": [
-            "DinRail"
-          ],
-          "nextQuestion": "QE2"
-        },
-        "Panel Mount": {
-          "tags": [
-            "Panel"
-          ],
-          "nextQuestion": "QE2"
-        }
-      },
-      "isProduct": false
-    },
-    "QE10": {
-      "question": "Does the meter need certification for regulatory compliance?",
-      "isProduct": false,
-      "answers": {
-        "No": {
-          "tags": [
-            "NoCertification"
-          ],
-          "nextQuestion": "LastQuestion"
-        },
-        "Yes": {
-          "tags": [
-            "Certification"
-          ],
-          "nextQuestion": "LastQuestion"
-        }
-      }
-    },
-    "QE2": {
-      "question": "What phase does the system use?",
-      "answers": {
-        "Single Phase": {
-          "tags": [
-            "SinglePhase"
-          ],
-          "nextQuestion": "QE3"
-        },
-        "Three Phase": {
-          "tags": [
-            "ThreePhase"
-          ],
-          "nextQuestion": "QE3"
-        },
-        "Multi Circuit": {
-          "tags": [
-            "MultiCircuit"
-          ],
-          "nextQuestion": "QE3"
-        }
-      },
-      "isProduct": false
-    },
-    "QE3": {
-      "question": "Is a National Meter Identifier (NMI) required?",
-      "answers": {
-        "Yes": {
-          "tags": [
-            "NMI"
-          ],
-          "nextQuestion": "QE4"
-        },
-        "No": {
-          "tags": [
-            "NoNMI"
-          ],
-          "nextQuestion": "QE4"
-        }
-      },
-      "isProduct": false
-    },
-    "QE4": {
-      "question": "What communication protocol is needed?",
-      "answers": {
-        "RS485": {
-          "tags": [
-            "RS485"
-          ],
-          "nextQuestion": "QE5"
-        },
-        "Modbus": {
-          "tags": [
-            "Modbus"
-          ],
-          "nextQuestion": "QE5"
-        },
-        "Ethernet": {
-          "tags": [
-            "Ethernet"
-          ],
-          "nextQuestion": "QE5"
-        }
-      },
-      "isProduct": false
-    },
-    "QE5": {
-      "question": "Is memory or data logging required?",
-      "answers": {
-        "Yes": {
-          "tags": [
-            "Memory"
-          ],
-          "nextQuestion": "QE6"
-        },
-        "No": {
-          "tags": [
-            "NoMemory"
-          ],
-          "nextQuestion": "QE6"
-        }
-      },
-      "isProduct": false
-    },
-    "QE6": {
-      "question": "What is the voltage range of the system?",
-      "answers": {
-        "Low Voltage": {
-          "tags": [
-            "LowVoltage"
-          ],
-          "nextQuestion": "QE7"
-        },
-        "Medium to High Voltage": {
-          "tags": [
-            "MediumHighVoltage"
-          ],
-          "nextQuestion": "QE7"
-        },
-        "DC Metering": {
-          "tags": [
-            "DCMetering"
-          ],
-          "nextQuestion": "QE7"
-        }
-      },
-      "isProduct": false
-    },
-    "QE7": {
-      "question": "What is the current measurement method?",
-      "answers": {
-        "Less than 100A": {
-          "tags": [
-            "LessThan100A"
-          ],
-          "nextQuestion": "QE8"
-        },
-        "More than 100A": {
-          "tags": [
-            "MoreThan100A"
-          ],
-          "nextQuestion": "QE8"
-        }
-      },
-      "isProduct": false
-    },
-    "QE8": {
-      "question": "Is advanced functionality required?",
-      "answers": {
-        "Harmonics": {
-          "tags": [
-            "Harmonics"
-          ],
-          "nextQuestion": "QE9"
-        },
-        "Power Quality": {
-          "tags": [
-            "PowerQuality"
-          ],
-          "nextQuestion": "QE9"
-        }
-      },
-      "isProduct": false
-    },
-    "QE9": {
-      "question": "What is the accuracy class required?",
-      "answers": {
-        "Class 0.5": {
-          "tags": [
-            "Class0.5"
-          ],
-          "nextQuestion": "QE10"
-        },
-        "Class 1": {
-          "tags": [
-            "Class1"
-          ],
-          "nextQuestion": "QE10"
-        },
-        "Class 2": {
-          "tags": [
-            "Class2"
-          ],
-          "nextQuestion": "QE10"
-        }
-      },
-      "isProduct": false
+    "iMeter5": {
+      "imageUrl": "",
+      "isProduct": true,
+      "name": "iMeter5",
+      "tags": [
+        "Panel",
+        "ThreePhase",
+        "NoNMI",
+        "ModbusRTU",
+        "Memory",
+        "Harmonics",
+        "ClassS",
+        "PQM"
+      ]
     },
     "iMeter6": {
       "isProduct": true,
@@ -313,15 +130,14 @@
       "name": "iMeter6",
       "tags": [
         "Panel",
-        "SinglePhase",
-        "NMI",
-        "RS485",
-        "NoMemory",
-        "DCMetering",
-        "MoreThan100A",
+        "ThreePhase",
+        "NoNMI",
+        "ModbusRTU",
+        "Memory",
         "Harmonics",
-        "Class1",
-        "NoCertification"
+        "ClassS/A",
+        "Ethernet",
+        "PQM"
       ]
     }
   }

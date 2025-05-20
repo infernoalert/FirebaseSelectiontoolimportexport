@@ -13,7 +13,7 @@ const db = admin.firestore();
 // Export data from Firestore based on condition
 async function exportData() {
   try {
-    const questionsCollection = db.collection("Questions");
+    const questionsCollection = db.collection("Products");
     const snapshot = await questionsCollection.get();
 
     if (snapshot.empty) {
